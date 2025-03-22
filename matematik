@@ -1,0 +1,14 @@
+function böyle() {
+        var a =document.getElementById("brow").value;
+        var b = document.getElementById("ps").value;
+        var c = document.getElementById("adbt").value;
+
+        if (a == "admin" && b == "emirhan7"){
+            alert("giriş başarılı");
+            adbt.disabled = false ;
+        } 
+        else {
+            alert ("giriş hatalı"); 
+            adbt.disabled = true ;
+        }
+    }

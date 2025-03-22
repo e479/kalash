@@ -1,0 +1,18 @@
+function selam () {
+    var a =document.getElementById("i").Value;
+    var b =document.getElementById("s").Value;
+    var c =document.getElementById("btn").Value;
+
+
+    if (i !== '' && s !== '') 
+    {
+        alert("başarıyla giriş yaptınız");
+        btn.disabled = false ;
+
+    }
+
+    else {
+        alert("giriş hatalı");
+        btn.disabled = true ;
+    }
+}

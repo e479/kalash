@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÇOK İYİ SİTE</title>
+    <link rel="icon" type="image/png" href="siteresim.png">
+    <style>
+
+.file-label {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0px 4px 15px rgba(255, 65, 108, 0.6);
+            
+}
+
+.file-label:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 20px rgba(255, 65, 108, 0.8);
+}
+
+#fileinput {
+            display: none; 
+        }
+
+        #filename {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #0011ff;
+            font-style: italic;
+            display: none;
+        }
+
+        .theme-butto {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            color: white;
+            font-weight: bold;
+        }
+
+        #drkm {
+            background: #fb0000;
+            box-shadow: 0px 4px 10px #fb0000;
+        }
+
+        #drkm:hover {
+            background: #fb0000;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        #lgtm {
+            background: #fdd835;
+            box-shadow: 0px 4px 10px rgba(255, 223, 56, 0.5);
+        }
+
+        #lgtm:hover {
+            background: gold;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .bt {
+            width: 170px;
+            box-shadow: 0px 5px 0px 0px #888888;
+        }
+
+        .bt:hover {
+            background-color: gold;
+            transition: 1s;
+        }
+
+        #tbl {
+            margin: 10px;
+            padding: 10px;
+            color: white;
+        }
+
+        #xc {
+            transition: background 0.5s ease-in-out, opacity 0.5s ease-in-out, width 0.5s ease-in-out;
+            background-image: url("police_car_street_139529_1280x1024.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .blm {
+            position: relative;
+            left: 500px;
+            bottom: 150px;
+        }
+
+        #fl {
+            margin-bottom: 20px;
+            
+        }
+
+        #adp {
+
+        }
+    </style>
+</head>
+<body id="xc">
+
+    <nav style="padding: 15px; text-align: center;">
+        <a href="#" style="color: white; margin: 0 15px; text-decoration: none; font-size: 20px;">Ana Sayfa</a>
+        <a href="#" style="color: white; margin: 0 15px; text-decoration: none; font-size: 20px;">Hakkımızda</a>
+        <a href="#" style="color: white; margin: 0 15px; text-decoration: none; font-size: 20px;">İletişim</a>
+    </nav>   
+
+    <form>
+        <table id="tbl" border="0">
+            <tr>
+                <td>Adınız</td>
+                <td>Soyadınız</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="buraya yazınız"></td>
+                <td><input type="text" placeholder="buraya yazınız"></td>
+            </tr>
+            <tr>
+                <td>Şifre</td>
+                <td>Şifrenizi Tekrar Giriniz</td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="buraya yazınız"></td>
+                <td><input type="password" placeholder="buraya yazınız"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="bt" onclick="gf()" value="gönder"></td>
+                <td><input type="reset" class="bt" value="Sıfırla"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="wm()" class="theme-button" id="drkm">karanlık tema</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="nm()" class="theme-button" id="lgtm">aydınlık tema</button></td>
+            </tr>
+        </table>
+    </form>
+<div class="blm">
+<div id="fl">
+    <label for="fileinput" class="file-label">🎵 MP3 Seç</label>
+    <input type="file" id="fileinput" accept="audio/*">
+    <p id="filename">Seçilen dosya: Henüz yok</p>
+   
+</div>
+<div id="adp">
+    <audio id="audioplayer" controls></audio>
+</div>
+
+</div>
+
+    <script>
+        function gf() {
+            alert("Formunuz iletildi");
+        }
+
+        function wm() {
+            let bg = document.getElementById('xc');
+            bg.style.opacity = '0';
+            setTimeout(() => {
+                bg.style.backgroundImage = 'url("police_car_street_139529_1280x1024.jpg")';
+                bg.style.opacity = '1';
+            }, 300);
+        }
+
+        function nm() {
+            let bg = document.getElementById('xc');
+            bg.style.opacity = '0';
+            setTimeout(() => {
+                bg.style.backgroundImage = 'url("duvakagit.jpg")';
+                bg.style.opacity = '1';
+            }, 300);
+        }
+
+        
+        window.onload = function() {
+            document.getElementById('fileinput').addEventListener('change', function(event) {
+                const file = event.target.files[0];
+
+                if (file) {
+                    const audioplayer = document.getElementById('audioplayer');
+                    const objecturl = URL.createObjectURL(file);
+
+                    audioplayer.src = objecturl;
+                    audioplayer.load();  
+                    filenameDisplay.textContent = "Seçilen dosya: " + file.name;
+                }
+            });
+        };
+    </script>
+
+</body>
+</html>

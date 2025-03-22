@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function böyle() {
+        var a =document.getElementById("brow").value;
+        var b = document.getElementById("ps").value;
+        var c = document.getElementById("adbt").value;
+
+        if (a == "admin" && b == "emirhan7"){
+            alert("giriş başarılı");
+            adbt.style.display = 'inline-block';
+        } 
+        else {
+            alert ("giriş hatalı"); 
+            adbt.style.display = false;
+            
+        }
+    }
+    var ses = document.getElementById("müzik");
+    ses.volume = 1;
+    </script>
+</head>
+<body>    
+    <div id="bölüm1">
+    <img oncontextmenu="return false;" id="resim" src="duvakagit.jpg" alt="">  
+    
+        <button id="buton" onclick="window.location.href='tablo.html'">gfdhgfdhdfg</button>
+        <audio controls volume="0.5" autoplay id="müzik"><source src="5l33p-dark-mercer-slowed-reverb.mp3" type="audio/mp3"></audio>
+        
+   
+   <input type="text" name="arama" id="brow"> 
+   <div id="kc"><h4>Kullanıcı adı :</h4></div>
+   <input type="text" name="şifre" id="ps">
+   <div id="pw"><h4>Şifre :</h4></div>
+   <button onclick="window.location.href='tablo.html'" id="adbt">giriş yap</button>
+   
+   <button id="öyle" onclick="böyle()">kontrol et</button>
+
+   <a href="https://www.google.com.tr" id="google">siteye giriş</a>
+
+
+   <script>
+    
+   </script>
+   
+</body>
+</html>

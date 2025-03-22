@@ -1,0 +1,180 @@
+#buton {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 15%;
+    height: 10%;
+    border: none;
+    color: white;
+    background: linear-gradient(to left,blue,red);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px
+}
+
+#buton:hover {
+    color: #0d00ff;
+    background-color: #fff;
+    border: 2px solid #0011ff;
+    transition: 1s;      
+}
+
+#buton:active {
+    background-color: #3618f7d0;
+    box-shadow: 0 3px #ff0000;
+    transform: translateY(3px);
+}
+
+#bölüm1 {
+    position: relative;
+    width: 100%;
+}
+
+#bölüm1 #resim {
+    width: 100%;
+    height: 100%;
+}
+
+#bölüm1 #buton {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 12px 24px;
+}
+
+#bölüm1 #müzik {
+    position: absolute;
+    top: 15%;
+    left: -1%;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 24px;    
+}
+
+#cont {
+    
+    background-color:cornflowerblue;
+    display: flex;
+}
+
+.flex {
+    flex-direction: row-reverse;
+    display: flex;
+    background-color:coral;
+    padding:30px;
+    margin:10px;
+    font-size:30px;
+}
+
+#bölüm1 #brow {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+#bölüm1 #kc {
+    position: absolute;
+    top: 28%;
+    left: 6%;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 24px;
+    color: white;
+}
+
+#bölüm1 #ps {
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+#bölüm1 #pw {
+    position: absolute;
+    top: 34%;
+    left: 6%;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 24px;
+    color: white;
+}
+
+#öyle {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 15%;
+    height: 10%;
+    border: none;
+    color: white;
+    background: linear-gradient(to left,rgb(255, 13, 0),rgb(26, 255, 0));
+    padding: 10px 20px;
+    cursor: pointer;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px
+}
+
+#bölüm1 #öyle {
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 12px 24px;
+}
+
+#öyle:hover {
+    color: #00ccff;
+    background-color: #ff00d0;
+    transition: 1s;      
+}
+
+#bölüm1 #adbt {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 12px 24px;
+}
+
+#adbt:hover {
+    color: #00ccff;
+    background-color: #1500ff;
+    transition: 1s;      
+}
+
+#adbt {
+    display: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 15%;
+    height: 10%;
+    border: none;
+    color: white;
+    background-color: #ff00c8d0;
+    padding: 10px 20px;
+    cursor: pointer;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px
+    
+    
+}
+
+#google:visited {
+    text-decoration: none;
+    color: #ff0000;
+}
